@@ -1,0 +1,191 @@
+.post {
+  margin-bottom: 21px;
+
+  @include breakpoint($tablet-width) {
+    min-height: 455px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include breakpoint($desktop-width) {
+    min-height: 555px;
+    margin-bottom: 55px;
+  }
+
+  &--daily {
+    min-height: auto;
+    margin-top: 50px;
+
+    @include breakpoint($tablet-width) {
+      margin-top: 80px;
+      margin-bottom: 50px;
+    }
+
+    @include breakpoint($desktop-width) {
+      margin-top: 90px;
+    }
+  }
+}
+
+.post__wrapper {
+  padding: 0 20px;
+
+  @include breakpoint($desktop-width) {
+    box-sizing: border-box;
+    width: $desktop-width;
+    margin: 0 auto;
+  }
+}
+
+.post__link {
+  position: relative;
+  display: block;
+
+  .post--daily & {
+    @include breakpoint($desktop-width) {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  }
+
+  .post--daily &::before {
+    content: "Панорама дня";
+    position: absolute;
+    right: 20px;
+    padding: 5px 20px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 2;
+    text-transform: uppercase;
+    color: $white;
+    background-color: $pink;
+
+    @include breakpoint($tablet-width) {
+      top: 55px;
+    }
+
+    @include breakpoint($desktop-width) {
+      right: calc(50% - 470px);
+    }
+  }
+}
+
+.post__image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.post__content {
+  padding: 18px 15px 15px;
+  background-color: $light-grey;
+
+  @include breakpoint($tablet-width) {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 22px 30px;
+  }
+
+  .post--daily & {
+    @include breakpoint($tablet-width) {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}
+
+.post__header {
+  margin: 0;
+  font-size: 14px;
+
+  .post--daily & {
+    @include breakpoint($tablet-width) {
+      order: 1;
+    }
+  }
+}
+
+.post__author {
+  font-weight: 700;
+  line-height: 1.72;
+}
+
+.post__time {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 2;
+  text-transform: uppercase;
+}
+
+.post__text {
+  margin: 0;
+  line-height: 1.72;
+
+  @include breakpoint($tablet-width) {
+    flex-grow: 1;
+  }
+
+  .post--daily & {
+    @include breakpoint($tablet-width) {
+      order: 3;
+      margin-top: -5px;
+    }
+  }
+}
+
+.post__like {
+  margin-top: 5px;
+
+  @include breakpoint($tablet-width) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .post--daily & {
+    @include breakpoint($tablet-width) {
+      order: 2;
+      margin-top: 0;
+    }
+  }
+}
+
+.post__like-btn {
+  padding: 10px;
+  margin-left: -10px;
+  background-color: transparent;
+  border: 0;
+
+  @include breakpoint($tablet-width) {
+    order: 2;
+    margin-left: 0;
+    margin-right: -10px;
+  }
+
+  .post--daily & {
+    @include breakpoint($tablet-width) {
+      margin-left: 5px;
+    }
+  }
+
+  svg {
+    display: block;
+    fill: $pink;
+  }
+}
+
+.post__like-count {
+  margin-left: 5px;
+  font-size: 12px;
+  line-height: 2;
+  text-transform: uppercase;
+  color: $pink;
+
+  @include breakpoint($tablet-width) {
+    order: 1;
+    margin-left: 0;
+  }
+}

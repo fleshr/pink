@@ -1,0 +1,94 @@
+.duration {
+  padding: 55px 0 30px;
+
+  @media (max-width: $tablet-width - 1px) {
+    display: none;
+  }
+
+  @include breakpoint($desktop-width) {
+    background-color: $light-grey;
+    padding: 70px 0;
+  }
+}
+
+.duration__wrapper {
+  padding: 0 20px;
+
+  @include breakpoint($desktop-width) {
+    box-sizing: border-box;
+    width: $desktop-width;
+    margin: 0 auto;
+  }
+}
+
+.duration__container {
+  width: 50%;
+  min-height: 236px;
+  padding-top: 40px;
+  padding-left: 50%;
+  background-image:
+    url("../images/bg-timer.svg");
+  background-position: calc(50% - 190px) top;
+  background-repeat: no-repeat;
+  background-size: 238px 276px;
+
+  @include breakpoint($desktop-width) {
+    width: 60%;
+    min-height: 250px;
+    padding-top: 95px;
+    padding-left: 40%;
+    background-position: left top;
+    background-size: 298px 345px;
+  }
+}
+
+.duration__title {
+  padding-right: 120px;
+  margin: 0;
+  font-size: 30px;
+  line-height: 1.2;
+  color: $black;
+
+  @include breakpoint($desktop-width) {
+    font-size: 30px;
+    line-height: 1;
+  }
+}
+
+.duration__text {
+  margin: 0;
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.78;
+
+  @include breakpoint($desktop-width) {
+    margin-top: 25px;
+    font-size: 18px;
+    line-height: 1.67;
+  }
+}
+
+.duration__link {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.71;
+  color: $pink;
+
+  &:focus,
+  &:hover {
+    cursor: pointer;
+    color: $grey;
+    text-decoration: none;
+  }
+
+  &:active {
+    color: rgba($grey, .3);
+  }
+
+  @include breakpoint($desktop-width) {
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 1.67;
+  }
+}

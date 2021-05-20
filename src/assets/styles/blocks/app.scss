@@ -1,0 +1,154 @@
+.app {
+  background-image:
+    url("../images/iphone-hand-mobile@1x.png");
+  background-position: calc(50% - 30px) 110px;
+  background-repeat: no-repeat;
+  background-size: 258px 286px;
+
+  @include retina($retina-2x) {
+    background-image:
+      url("../images/iphone-hand-mobile@2x.png");
+  }
+
+  @include breakpoint($tablet-width) {
+    background-image:
+      url("../images/iphone-hand-tablet@1x.png");
+    background-position: center bottom;
+    background-size: 700px 545px;
+
+    @include retina($retina-2x) {
+      background-image:
+        url("../images/iphone-hand-tablet@2x.png");
+    }
+  }
+
+  @include breakpoint($desktop-width) {
+    background-image:
+      url("../images/iphone-hand-desktop@1x.png");
+    background-position-x: calc(50% + 70px);
+    background-size: 1050px 645px;
+
+    @include retina($retina-2x) {
+      background-image:
+        url("../images/iphone-hand-desktop@2x.png");
+    }
+  }
+}
+
+.app__wrapper {
+  padding-top: 25px;
+
+  @include breakpoint($tablet-width) {
+    padding: 95px 20px 115px;
+  }
+
+  @include breakpoint($desktop-width) {
+    box-sizing: border-box;
+    width: $desktop-width;
+    padding: 100px 20px 125px;
+    margin: 0 auto;
+  }
+}
+
+.app__title {
+  width: 260px;
+  min-height: 370px;
+  margin: 0 auto;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1.2;
+  color: $white;
+  text-align: center;
+
+  @include breakpoint($tablet-width) {
+    box-sizing: border-box;
+    width: 300px;
+    padding: 0 50px;
+    min-height: auto;
+    margin: 0;
+    font-size: 40px;
+  }
+
+  @include breakpoint($desktop-width) {
+    width: 300px;
+    padding: 0 25px;
+    font-size: 50px;
+    line-height: 1.36;
+  }
+}
+
+.app__download {
+  background-color: $dark-grey;
+
+  @include breakpoint($tablet-width) {
+    background-color: transparent;
+    margin-top: 30px;
+  }
+
+  @include breakpoint($desktop-width) {
+    margin-top: 35px;
+  }
+}
+
+.app__download-wrap {
+  padding: 30px 20px 35px;
+
+  @include breakpoint($tablet-width) {
+    width: 300px;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.app__button {
+
+  @include breakpoint($desktop-width) {
+    font-size: 21px;
+    line-height: 18px;
+  }
+}
+
+.app__os-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin: 30px 0 20px;
+  list-style: none;
+
+  @include breakpoint($tablet-width) {
+    margin: 45px 0 30px;
+  }
+
+  @include breakpoint($desktop-width) {
+    margin: 65px 0 55px;
+  }
+}
+
+.app__os-item {
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+
+  img {
+    display: block;
+  }
+
+  &:not(:first-child) img {
+    margin-top: 10px;
+  }
+}
+
+.app__os-text {
+  margin: 0;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: center;
+  color: $white;
+
+  @include breakpoint($tablet-width) {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+}

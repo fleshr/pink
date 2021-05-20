@@ -1,0 +1,60 @@
+.gallery {
+  padding: 45px 0;
+
+  @include breakpoint($tablet-width) {
+    padding: 90px 0 65px;
+  }
+
+  @include bp-min($desktop-width) {
+    padding: 90px 0 25px;
+  }
+}
+
+.gallery__wrapper {
+  padding: 0 20px;
+
+  @include breakpoint($desktop-width) {
+    box-sizing: border-box;
+    width: $desktop-width;
+    margin: 0 auto;
+  }
+}
+
+.gallery__title {
+  padding: 0 15px;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2.15;
+  text-align: center;
+
+  @include breakpoint($tablet-width) {
+    padding: 0 13%;
+    font-size: 18px;
+    line-height: 1.67;
+  }
+
+  @include breakpoint($desktop-width) {
+    padding: 0 18%;
+  }
+}
+
+.gallery__list {
+  margin-bottom: -21px;
+
+  @include breakpoint($tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.gallery__post {
+  @include breakpoint($tablet-width) {
+    width: calc(50% - 10px);
+  }
+
+  @include breakpoint($desktop-width) {
+    width: 300px;
+  }
+}

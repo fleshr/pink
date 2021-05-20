@@ -1,0 +1,8 @@
+.page-header {
+  position: relative;
+  margin-bottom: -70px;
+
+  @include breakpoint($tablet-width) {
+    margin-bottom: -110px;
+  }
+}

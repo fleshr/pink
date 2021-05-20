@@ -1,0 +1,63 @@
+.price {
+  background-color: $light-grey;
+  background-image:
+    url("../images/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  overflow: hidden;
+}
+
+.price__wrapper {
+  text-align: center;
+}
+
+.price__table {
+  position: relative;
+  width: 832px;
+  margin: 0 auto;
+  border-collapse: collapse;
+
+  span {
+    display: block;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.37;
+  }
+
+  th {
+    padding: 13px 0 32px;
+    color: $white;
+    font-size: 16px;
+    line-height: 1.87;
+    text-align: center;
+    text-transform: uppercase;
+
+    &:first-child {
+      display: none;
+      border-top-left-radius: 3px;
+    }
+
+    &:not(:first-child) {
+      background-color: $grey;
+      border: 2px solid black;
+    }
+
+    &:nth-child(2){
+      border-top-left-radius: 3px;
+    }
+
+    &:last-child {
+      border-top-right-radius: 3px;
+    }
+  }
+
+  td {
+    text-align: center;
+    border: 2px solid #e5e5e5;
+
+    &:first-child {
+      display: none;
+    }
+  }
+}
+

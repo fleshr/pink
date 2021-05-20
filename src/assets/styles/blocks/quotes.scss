@@ -1,0 +1,187 @@
+.quotes {
+  padding: 40px 0;
+
+  @include breakpoint($tablet-width) {
+  padding: 70px 0;
+  }
+}
+
+.quotes__wrapper {
+  padding: 0 20px;
+
+  @include breakpoint($desktop-width) {
+    box-sizing: border-box;
+    width: $desktop-width;
+    margin: 0 auto;
+    display: flex;
+  }
+}
+
+.quotes__list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  overflow: hidden;
+
+  @include breakpoint($desktop-width) {
+    order: 2;
+  }
+}
+
+.quotes__item {
+  flex: none;
+  width: 100%;
+  text-align: center;
+
+  &::before {
+    @include breakpoint($desktop-width) {
+      content: "";
+      display: block;
+      width: 79px;
+      height: 63px;
+      margin: 0 auto;
+      background-image:
+        url("../images/icon-quotes.svg");
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+
+  @include breakpoint($tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.quotes__author {
+  @include breakpoint($tablet-width) {
+    order: 2;
+    margin: 35px 0;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  @include breakpoint($desktop-width) {
+    margin: 0;
+  }
+}
+
+.quotes__author-name {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.67;
+
+  @include breakpoint($tablet-width) {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  @include breakpoint($desktop-width) {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+}
+
+.quotes__author-info {
+  margin: 0;
+  font-size: 14px;
+  line-height: 2.15;
+
+  @media (max-width: $tablet-width - 1px) {
+    display: none;
+  }
+
+  @include breakpoint($desktop-width) {
+    margin-top: 5px;
+    font-size: 18px;
+    line-height: 1.67;
+  }
+}
+
+.quotes__text {
+  margin: 15px 0 30px;
+  font-size: 14px;
+  line-height: 2.15;
+
+  @include breakpoint($tablet-width) {
+    order: 1;
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.67;
+  }
+
+  @include breakpoint($desktop-width) {
+    margin: 50px 65px 35px;
+  }
+}
+
+.quotes__button {
+  @media (max-width: $desktop-width - 1px) {
+    display: none;
+  }
+
+  width: 60px;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  flex: none;
+  font-size: 0;
+  opacity: .3;
+
+  &:focus,
+  &:hover {
+    cursor: pointer;
+    opacity: .6;
+  }
+
+  &:active {
+    opacity: .1;
+  }
+
+  &--prev {
+    order: 1;
+    background-image:
+      url("../images/icon-review-arrow-left.svg");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 22px 41px;
+  }
+
+  &--next {
+    order: 3;
+    background-image:
+      url("../images/icon-review-arrow-right.svg");
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 22px 41px;
+  }
+}
+
+.quotes__bullets {
+  display: flex;
+  justify-content: center;
+}
+
+.quotes__bullet {
+  box-sizing: content-box;
+  padding: 0;
+  margin: 3px 10px;
+  width: 6px;
+  height: 6px;
+  background-color: rgba($grey, .3);
+  border-radius: 50%;
+  border: 0;
+  font-size: 0;
+
+  &--active {
+    margin: 0 7px;
+    border: 3px solid $grey;
+    background-color: transparent;
+  }
+
+  @include breakpoint($desktop-width) {
+    display: none;
+  }
+}

@@ -1,0 +1,74 @@
+.button {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15px 20px;
+  font: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1;
+  color: $white;
+  text-align: center;
+  background-color: transparent;
+  border: 3px solid $white;
+  border-radius: 32px;
+  cursor: pointer;
+
+  &:focus,
+  &:hover {
+    color: $pink;
+    background-color: $white;
+  }
+
+  &:active {
+    color: rgba($pink, 0.3);
+  }
+
+  &--white {
+    color: $pink;
+    border-color: $pink;
+
+    &:focus,
+    &:hover {
+      color: $white;
+      background-color: $pink;
+    }
+
+    &:active {
+      color: rgba($white, 0.3);
+    }
+  }
+
+  &--pink {
+    color: $pink;
+    border-color: $pink;
+
+    &:focus,
+    &:hover {
+      color: $white;
+      background-color: $pink;
+    }
+
+    &:active {
+      color: rgba($white, 0.3);
+    }
+  }
+
+  &--grey {
+    color: rgba($grey, .1);
+    border-color: rgba($grey, .1);
+
+    &:focus,
+    &:hover {
+      color: rgba($grey, .3);
+      border-color: rgba($grey, .3);
+      background-color: transparent;
+    }
+
+    &:active {
+      color: rgba($white, 0.3);
+      border-color: transparent;
+      background-color: rgba($grey, .3);
+    }
+  }
+}

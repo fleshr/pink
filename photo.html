@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <meta name="description" content="Взгляните на жизнь иначе!">
+  <meta name="keywords" content="Усталость, серость, настроение">
+  <meta name="author" content="fleshr">
+  <link rel="stylesheet" href="assets/styles/style.min.css">
+  <link rel="preload" href="assets/fonts/opensans.woff2" as="font" crossorigin>
+  <link rel="preload" href="assets/fonts/opensanslight.woff2" as="font" crossorigin>
+  <link rel="preload" href="assets/fonts/opensansbold.woff2" as="font" crossorigin>
+</head>
+<body>
+  <header class="page-header">
+    <nav class="site-nav">
+      <div class="site-nav__wrapper">
+        <div class="site-nav__header">
+          <a class="site-nav__logo-link" href="index.html">
+            <picture>
+              <source srcset="assets/images/logo-pink-white-desktop.svg" media="(min-width: 980px)">
+              <source srcset="assets/images/logo-pink-white-tablet.svg" media="(min-width: 660px)">
+              <img class="site-nav__logo" src="assets/images/logo-pink-white-mobile.svg" alt="Логотип Pink">
+            </picture>
+          </a>
+          <button class="site-nav__toogle" type="button">
+            <span class="site-nav__toogle-burger">Меню</span>
+          </button>
+        </div>
+        <ul class="site-nav__list">
+          <li class="site-nav__item">
+            <a href="index.html" class="site-nav__link">Главная</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="photo.html" class="site-nav__link site-nav__link--active">Фотографии</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="form.html" class="site-nav__link">Конкурс</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="https://htmlacademy.ru/" class="site-nav__link">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="page-main">
+    <header class="main-header">
+      <h1 class="main-header__title">
+        Фотографии<br>
+        пользователей
+      </h1>
+    </header>
+    <section class="gallery">
+      <div class="gallery__wrapper">
+        <h2 class="gallery__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
+      </div>
+      <article class="post post--daily">
+        <a class="post__link" href="#">
+          <picture>
+            <source
+              type="image/webp"
+              media="(min-width: 980px)"
+              srcset="assets/images/panorama-desktop@1x.webp,
+                      assets/images/panorama-desktop@2x.webp 2x">
+            <source
+              type="image/webp"
+              media="(min-width: 660px)"
+              srcset="assets/images/panorama-tablet@1x.webp,
+                      assets/images/panorama-tablet@2x.webp 2x">
+            <source
+              type="image/webp"
+              srcset="assets/images/panorama-mobile@1x.webp,
+                      assets/images/panorama-mobile@2x.webp 2x">
+            <source
+              media="(min-width: 980px)"
+              srcset="assets/images/panorama-desktop@1x.jpg,
+                      assets/images/panorama-desktop@2x.jpg 2x">
+            <source
+              media="(min-width: 660px)"
+              srcset="assets/images/panorama-tablet@1x.jpg,
+                      assets/images/panorama-tablet@2x.jpg 2x">
+            <img
+              class="post__image"
+              src="assets/images/panorama-mobile@1x.jpg"
+              srcset="assets/images/panorama-mobile@2x.jpg 2x"
+              alt="Пост">
+          </picture>
+        </a>
+        <div class="post__wrapper">
+          <div class="post__content">
+            <h3 class="post__header">
+              <span class="post__author">Анна</span>
+              <time class="post__time" datetime="2021-03-07 13:45">(5 минут назад)</time>
+            </h3>
+            <p class="post__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <div class="post__like">
+              <button class="post__like-btn" type="button">
+                <svg width="13" height="12">
+                  <use href="assets/images/sprite.svg#icon-twitter"/>
+                </svg>
+              </button>
+              <span class="post__like-count">Нравится: 215</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <div class="gallery__wrapper">
+        <div class="gallery__list">
+          <article class="gallery__post post">
+            <a class="post__link" href="#">
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(min-width: 980px)"
+                  srcset="assets/images/photo-car-desktop@1x.webp,
+                          assets/images/photo-car-desktop@2x.webp 2x">
+                <source
+                  type="image/webp"
+                  media="(min-width: 660px)"
+                  srcset="assets/images/photo-car-tablet@1x.webp,
+                          assets/images/photo-car-tablet@2x.webp 2x">
+                <source
+                  type="image/webp"
+                  srcset="assets/images/photo-car-mobile@1x.webp,
+                          assets/images/photo-car-mobile@2x.webp 2x">
+                <source
+                  media="(min-width: 980px)"
+                  srcset="assets/images/photo-car-desktop@1x.jpg,
+                          assets/images/photo-car-desktop@2x.jpg 2x">
+                <source
+                  media="(min-width: 660px)"
+                  srcset="assets/images/photo-car-tablet@1x.jpg,
+                          assets/images/photo-car-tablet@2x.jpg 2x">
+                <img
+                  class="post__image"
+                  src="assets/images/photo-car-mobile@1x.jpg"
+                  srcset="assets/images/photo-car-mobile@2x.jpg 2x"
+                  alt="Пост">
+              </picture>
+            </a>
+            <div class="post__content">
+              <h3 class="post__header">
+                <span class="post__author">Левон</span>
+                <time class="post__time" datetime="2021-03-07 13:45">(5 часов назад)</time>
+              </h3>
+              <p class="post__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <div class="post__like">
+                <button class="post__like-btn" type="button">
+                  <svg width="13" height="12">
+                    <use href="assets/images/sprite.svg#icon-twitter"/>
+                  </svg>
+                </button>
+                <span class="post__like-count">Нравится: 356</span>
+              </div>
+            </div>
+          </article>
+          <article class="gallery__post post">
+            <a class="post__link" href="#">
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(min-width: 980px)"
+                  srcset="assets/images/photo-drumset-desktop@1x.webp,
+                          assets/images/photo-drumset-desktop@2x.webp 2x">
+                <source
+                  type="image/webp"
+                  media="(min-width: 660px)"
+                  srcset="assets/images/photo-drumset-tablet@1x.webp,
+                          assets/images/photo-drumset-tablet@2x.webp 2x">
+                <source
+                  type="image/webp"
+                  srcset="assets/images/photo-drumset-mobile@1x.webp,
+                          assets/images/photo-drumset-mobile@2x.webp 2x">
+                <source
+                  media="(min-width: 980px)"
+                  srcset="assets/images/photo-drumset-desktop@1x.jpg,
+                          assets/images/photo-drumset-desktop@2x.jpg 2x">
+                <source
+                  media="(min-width: 660px)"
+                  srcset="assets/images/photo-drumset-tablet@1x.jpg,
+                          assets/images/photo-drumset-tablet@2x.jpg 2x">
+                <img
+                  class="post__image"
+                  src="assets/images/photo-drumset-mobile@1x.jpg"
+                  srcset="assets/images/photo-drumset-mobile@2x.jpg 2x"
+                  alt="Пост">
+              </picture>
+            </a>
+            <div class="post__content">
+              <h3 class="post__header">
+                <span class="post__author">Антон</span>
+                <time class="post__time" datetime="2021-03-07 13:45">(12 часов назад)</time>
+              </h3>
+              <p class="post__text">Соседи будут рады!</p>
+              <div class="post__like">
+                <button class="post__like-btn" type="button">
+                  <svg width="13" height="12">
+                    <use href="assets/images/sprite.svg#icon-twitter"/>
+                  </svg>
+                </button>
+                <span class="post__like-count">Нравится: 666</span>
+              </div>
+            </div>
+          </article>
+          <article class="gallery__post post">
+            <a class="post__link" href="#">
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(min-width: 980px)"
+                  srcset="assets/images/photo-window-desktop@1x.webp,
+                          assets/images/photo-window-desktop@2x.webp 2x">
+                <source
+                  type="image/webp"
+                  media="(min-width: 660px)"
+                  srcset="assets/images/photo-window-tablet@1x.webp,
+                          assets/images/photo-window-tablet@2x.webp 2x">
+                <source
+                  type="image/webp"
+                  srcset="assets/images/photo-window-mobile@1x.webp,
+                          assets/images/photo-window-mobile@2x.webp 2x">
+                <source
+                  media="(min-width: 980px)"
+                  srcset="assets/images/photo-window-desktop@1x.jpg,
+                          assets/images/photo-window-desktop@2x.jpg 2x">
+                <source
+                  media="(min-width: 660px)"
+                  srcset="assets/images/photo-window-tablet@1x.jpg,
+                          assets/images/photo-window-tablet@2x.jpg 2x">
+                <img
+                  class="post__image"
+                  src="assets/images/photo-window-mobile@1x.jpg"
+                  srcset="assets/images/photo-window-mobile@2x.jpg 2x"
+                  alt="Пост">
+              </picture>
+            </a>
+            <div class="post__content">
+              <h3 class="post__header">
+                <span class="post__author">Борис</span>
+                <time class="post__time" datetime="2021-03-07 13:45">(20 часов назад)</time>
+              </h3>
+              <p class="post__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <div class="post__like">
+                <button class="post__like-btn" type="button">
+                  <svg width="13" height="12">
+                    <use href="assets/images/sprite.svg#icon-twitter"/>
+                  </svg>
+                </button>
+                <span class="post__like-count">Нравится: 215</span>
+              </div>
+            </div>
+          </article>
+          <article class="gallery__post post">
+            <a class="post__link" href="#">
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(min-width: 980px)"
+                  srcset="assets/images/photo-fair-desktop@1x.webp,
+                          assets/images/photo-fair-desktop@2x.webp 2x">
+                <source
+                  type="image/webp"
+                  media="(min-width: 660px)"
+                  srcset="assets/images/photo-fair-tablet@1x.webp,
+                          assets/images/photo-fair-tablet@2x.webp 2x">
+                <source
+                  type="image/webp"
+                  srcset="assets/images/photo-fair-mobile@1x.webp,
+                          assets/images/photo-fair-mobile@2x.webp 2x">
+                <source
+                  media="(min-width: 980px)"
+                  srcset="assets/images/photo-fair-desktop@1x.jpg,
+                          assets/images/photo-fair-desktop@2x.jpg 2x">
+                <source
+                  media="(min-width: 660px)"
+                  srcset="assets/images/photo-fair-tablet@1x.jpg,
+                          assets/images/photo-fair-tablet@2x.jpg 2x">
+                <img
+                  class="post__image"
+                  src="assets/images/photo-fair-mobile@1x.jpg"
+                  srcset="assets/images/photo-fair-mobile@2x.jpg 2x"
+                  alt="Пост">
+              </picture>
+            </a>
+            <div class="post__content">
+              <h3 class="post__header">
+                <span class="post__author">Сергей</span>
+                <time class="post__time" datetime="2021-03-07 13:45">(25 часов назад)</time>
+              </h3>
+              <p class="post__text">Самая кубанская в мире!</p>
+              <div class="post__like">
+                <button class="post__like-btn" type="button">
+                  <svg width="13" height="12">
+                    <use href="assets/images/sprite.svg#icon-twitter"/>
+                  </svg>
+                </button>
+                <span class="post__like-count">Нравится: 4</span>
+              </div>
+            </div>
+          </article>
+          <article class="gallery__post post">
+            <a class="post__link" href="#">
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(min-width: 980px)"
+                  srcset="assets/images/photo-pov-desktop@1x.webp,
+                          assets/images/photo-pov-desktop@2x.webp 2x">
+                <source
+                  type="image/webp"
+                  media="(min-width: 660px)"
+                  srcset="assets/images/photo-pov-tablet@1x.webp,
+                          assets/images/photo-pov-tablet@2x.webp 2x">
+                <source
+                  type="image/webp"
+                  srcset="assets/images/photo-pov-mobile@1x.webp,
+                          assets/images/photo-pov-mobile@2x.webp 2x">
+                <source
+                  media="(min-width: 980px)"
+                  srcset="assets/images/photo-pov-desktop@1x.jpg,
+                          assets/images/photo-pov-desktop@2x.jpg 2x">
+                <source
+                  media="(min-width: 660px)"
+                  srcset="assets/images/photo-pov-tablet@1x.jpg,
+                          assets/images/photo-pov-tablet@2x.jpg 2x">
+                <img
+                  class="post__image"
+                  src="assets/images/photo-pov-mobile@1x.jpg"
+                  srcset="assets/images/photo-pov-mobile@2x.jpg 2x"
+                  alt="Пост">
+              </picture>
+            </a>
+            <div class="post__content">
+              <h3 class="post__header">
+                <span class="post__author">Максим</span>
+                <time class="post__time" datetime="2021-03-07 13:45">(40 часов назад)</time>
+              </h3>
+              <p class="post__text">Где снег-то?</p>
+              <div class="post__like">
+                <button class="post__like-btn" type="button">
+                  <svg width="13" height="12">
+                    <use href="assets/images/sprite.svg#icon-twitter"/>
+                  </svg>
+                </button>
+                <span class="post__like-count">Нравится: 150</span>
+              </div>
+            </div>
+          </article>
+          <article class="gallery__post post">
+            <a class="post__link" href="#">
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(min-width: 980px)"
+                  srcset="assets/images/photo-wing-desktop@1x.webp,
+                          assets/images/photo-wing-desktop@2x.webp 2x">
+                <source
+                  type="image/webp"
+                  media="(min-width: 660px)"
+                  srcset="assets/images/photo-wing-tablet@1x.webp,
+                          assets/images/photo-wing-tablet@2x.webp 2x">
+                <source
+                  type="image/webp"
+                  srcset="assets/images/photo-wing-mobile@1x.webp,
+                          assets/images/photo-wing-mobile@2x.webp 2x">
+                <source
+                  media="(min-width: 980px)"
+                  srcset="assets/images/photo-wing-desktop@1x.jpg,
+                          assets/images/photo-wing-desktop@2x.jpg 2x">
+                <source
+                  media="(min-width: 660px)"
+                  srcset="assets/images/photo-wing-tablet@1x.jpg,
+                          assets/images/photo-wing-tablet@2x.jpg 2x">
+                <img
+                  class="post__image"
+                  src="assets/images/photo-wing-mobile@1x.jpg"
+                  srcset="assets/images/photo-wing-mobile@2x.jpg 2x"
+                  alt="Пост">
+              </picture>
+            </a>
+            <div class="post__content">
+              <h3 class="post__header">
+                <span class="post__author">Надежда</span>
+                <time class="post__time" datetime="2021-03-07 13:45">(45 часов назад)</time>
+              </h3>
+              <p class="post__text">Всем GM и взаимные лайки!</p>
+              <div class="post__like">
+                <button class="post__like-btn" type="button">
+                  <svg width="13" height="12">
+                    <use href="assets/images/sprite.svg#icon-twitter"/>
+                  </svg>
+                </button>
+                <span class="post__like-count">Нравится: 2560</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="upload">
+      <div class="upload__wrapper">
+        <h2 class="upload__title">
+          Затмите их всех!<br>
+          Выкладывайте все, что накопилось в телефоне!
+        </h2>
+        <div class="upload__editor editor">
+          <div class="editor__image-wrap">
+            <picture>
+              <source
+                type="image/webp"
+                media="(min-width: 980px)"
+                srcset="assets/images/photo-road-desktop@1x.webp,
+                        assets/images/photo-road-desktop@2x.webp 2x">
+              <source
+                type="image/webp"
+                media="(min-width: 660px)"
+                srcset="assets/images/photo-road-tablet@1x.webp,
+                        assets/images/photo-road-tablet@2x.webp 2x">
+              <source
+                type="image/webp"
+                srcset="assets/images/photo-road-mobile@1x.webp,
+                        assets/images/photo-road-mobile@2x.webp 2x">
+              <source
+                media="(min-width: 980px)"
+                srcset="assets/images/photo-road-desktop@1x.jpg,
+                        assets/images/photo-road-desktop@2x.jpg 2x">
+              <source
+                media="(min-width: 660px)"
+                srcset="assets/images/photo-road-tablet@1x.jpg,
+                        assets/images/photo-road-tablet@2x.jpg 2x">
+              <img
+                class="editor__image"
+                src="assets/images/photo-road-mobile@1x.jpg"
+                srcset="assets/images/photo-road-mobile@2x.jpg 2x"
+                alt="Пост">
+            </picture>
+          </div>
+          <div class="editor__fields">
+            <div class="editor__togglers">
+              <button class="editor__toggler editor__toggler--crop editor__toggler--active" type="button">
+                <svg width="44" height="44">
+                  <use href="assets/images/sprite.svg#icon-editor-crop"/>
+                </svg>
+              </button>
+              <button class="editor__toggler editor__toggler--fill" type="button">
+                <svg width="48" height="43">
+                  <use href="assets/images/sprite.svg#icon-editor-fill"/>
+                </svg>
+              </button>
+              <button class="editor__toggler editor__toggler--contrast" type="button">
+                <svg width="32" height="32">
+                  <use href="assets/images/sprite.svg#icon-editor-contrast"/>
+                </svg>
+              </button>
+            </div>
+            <div class="editor__controls">
+              <div class="editor__range editor__range--crop editor__range--active">
+                <input class="editor__input" type="range" name="crop" id="crop">
+              </div>
+              <div class="editor__range editor__range--fill">
+                <input class="editor__input" type="range" name="fill" id="fill">
+              </div>
+              <div class="editor__range editor__range--contrast">
+                <input class="editor__input" type="range" name="contrast" id="contrast">
+              </div>
+            </div>
+            <div class="editor_buttons">
+              <button class="editor__button button button--pink">Запостить</button>
+              <button class="editor__button button button--grey">Отмена</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__logo">
+        <a class="page-footer__logo-link" href="index.html">
+          <svg width="146" height="40">
+            <use href="assets/images/sprite.svg#logo-pink-blue-desktop"/>
+          </svg>
+        </a>
+      </div>
+      <ul class="page-footer__social social">
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <svg width="18" height="14">
+              <use href="assets/images/sprite.svg#icon-twitter"/>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <svg width="9" height="18">
+              <use href="assets/images/sprite.svg#icon-facebook"/>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <svg width="15" height="13">
+              <use href="assets/images/sprite.svg#icon-youtube"/>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <p class="page-footer__copy">
+        Разработано
+        <a class="page-footer__copy-link" href="https://htmlacademy.ru/">
+          <svg width="27" height="34">
+            <use href="assets/images/sprite.svg#logo-htmlacademy"/>
+          </svg>
+        </a>
+      </p>
+    </div>
+  </footer>
+  <script src="assets/scripts/site-nav.js"></script>
+</body>
+</html>
